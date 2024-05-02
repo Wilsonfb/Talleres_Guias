@@ -13,8 +13,10 @@ class Estudiante:
         paso_o_no = nota_final / 2
         if paso_o_no <= 35:
             print("Perdio mi chino.")
+            print(f"El promedio de sus notas son {paso_o_no}.")
         else:
             print("Usted paso chino.") 
+            print(f"El promedio de sus notas son {paso_o_no}.")
 def mostrar_materia(materias):
     print("Lista de las materias: ")
     if materias:
@@ -49,16 +51,15 @@ while True:
         else:
             print("La materia no esta en la lista.")
     elif opcion == 4:
-        print("Saliendo del programa.")
         break
     else:
         print("Vueleve a intentarlo.")
 estudiante1 = Estudiante ("Pepe", 40, 50)
 estudiante2 = Estudiante ("Venito", 30, 20)
 print(f"El nombre del estudiante es {estudiante1.nombre} las notas del estudiante son {estudiante1.nota_1}, {estudiante1.nota_2}.")
-mostrar_materia(materias)
 estudiante1.calcular_nota()
+mostrar_materia(materias)
 print("-------------------------------------------------------------------------------------------------------------")
 print(f"El nombre del estudiante es {estudiante2.nombre} las notas del estudiante son {estudiante2.nota_1}, {estudiante2.nota_2}.")
-mostrar_materia(materias)
 estudiante2.calcular_nota()
+mostrar_materia(materias)
