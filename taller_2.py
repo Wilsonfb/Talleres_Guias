@@ -3,21 +3,25 @@
 #devolución del libro, considerando que el plazo de préstamo es de 30 días. A 
 #continuación, se solicita crear dos objetos de la clase Libro y utilizar el método para 
 #visualizar las fechas de devolución correspondientes.
+import datetime
 class Libro:
-    def __init__(self, codigo, nombre, año, fecha):
-        self.codigo = codigo
+    def _init_(self, nombre, codigo, año, fecha):
         self.nombre = nombre 
+        self.codigo = codigo
         self.año = año
         self.fecha = fecha
-codigo = int(input("Digita el codigo del libro: ")) 
-nombre = input("Digita el nombre del libro: ")
-import datetime
-fecha = datetime.datetime.now()
+    def calcular_fecha(self):
+       dias_a_sumar = datetime.timedelta(days = 30)
+       devolucion = self.fecha + dias_a_sumar
+       self.año = date.year
+       print(f"La fecha de prestamo es {self.fecha.strftime("%Y-%m-%d")}")
+       print(f"Lo debe regresar {devolucion}.")
 date = datetime.date.today()
-dias_a_sumar = datetime.timedelta(days=30)
-devolucion = fecha + dias_a_sumar
-año = date.year
-linbro1 = Libro (nombre, codigo)
-print(f"El libro se llama {linbro1.nombre}, se registra con el codigo de {linbro1.codigo} y se presta el año de {año}.")
-print(fecha.strftime("%Y-%m-%d"))
-print(f"La fecha que se debe regresar el libro a la biblioteca es el {devolucion}.")
+nombre = input("Digita el nombre del libro: ")
+codigo = int(input("Digita el codigo del libro: "))
+linbro1 = Libro(nombre, codigo, date.year, date)
+linbro2 = Libro("Las aventuras de piter salchicha", 1032397899, date.year, date) 
+print(f"El libro se llama {linbro1.nombre}, se registra con el codigo de {linbro1.codigo} .")
+linbro1.calcular_fecha()
+print(f"El libro se llama {linbro2.nombre}, se registra con el codigo de {linbro2.codigo} .")
+linbro2.calcular_fecha()
