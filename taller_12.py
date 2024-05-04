@@ -51,15 +51,15 @@ while True:
         else:
             print("La materia no esta en la lista.")
     elif opcion == 4:
+        estudiante1 = Estudiante ("Pepe", 40, 50)
+        estudiante2 = Estudiante ("Venito", 30, 20)
+        print(f"El nombre del estudiante es {estudiante1.nombre} las notas del estudiante son {estudiante1.nota_1}, {estudiante1.nota_2}.")
+        estudiante1.calcular_nota()
+        mostrar_materia(materias)
+        print("-------------------------------------------------------------------------------------------------------------")
+        print(f"El nombre del estudiante es {estudiante2.nombre} las notas del estudiante son {estudiante2.nota_1}, {estudiante2.nota_2}.")
+        estudiante2.calcular_nota()
+        mostrar_materia(materias)
         break
     else:
         print("Vueleve a intentarlo.")
-estudiante1 = Estudiante ("Pepe", 40, 50)
-estudiante2 = Estudiante ("Venito", 30, 20)
-print(f"El nombre del estudiante es {estudiante1.nombre} las notas del estudiante son {estudiante1.nota_1}, {estudiante1.nota_2}.")
-estudiante1.calcular_nota()
-mostrar_materia(materias)
-print("-------------------------------------------------------------------------------------------------------------")
-print(f"El nombre del estudiante es {estudiante2.nombre} las notas del estudiante son {estudiante2.nota_1}, {estudiante2.nota_2}.")
-estudiante2.calcular_nota()
-mostrar_materia(materias)
