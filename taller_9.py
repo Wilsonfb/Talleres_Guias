@@ -19,8 +19,8 @@ class Estudiante:
         total_notas = (estudiante1.nota + estudiante2.nota)
         promedio = total_notas / 2
         return promedio
-estudiante2 = Estudiante (nombre = "Juanito", nota = 33)
 estudiante1 = Estudiante (nombre = "Pepito", nota = 45)
+estudiante2 = Estudiante (nombre = "Juanito", nota = 33)
 estudiante1.informacion_del_estudiante()
 estudiante1.aprovado_del_estudiante()
 estudiante2.informacion_del_estudiante()
