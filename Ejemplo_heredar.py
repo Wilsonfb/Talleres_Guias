@@ -1,3 +1,5 @@
+##Proporciona un ejemplo de herencia en el mundo real y cómo se podría modelar con 
+##clases y objetos.
 class Cepillo:
     def __init__(self, tamaño, marca, color):
         self.tamaño = tamaño
