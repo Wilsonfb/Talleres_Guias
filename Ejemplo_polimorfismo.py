@@ -1,3 +1,5 @@
+##Proporciona un ejemplo de polimorfismo en el mundo real y cómo se podría 
+##implementar en un sistema orientado a objetos.
 class Vehiculo:
     def acelerar(self):
         pass
@@ -5,19 +7,19 @@ class Vehiculo:
         pass
 class Automovil(Vehiculo):
     def acelerar(self):
-        print("Acelera presionando el pedal del acelerador.")
+        print("El auto celera presionando el pedal del acelerador.")
     def frenar(self):
-        print("Frena usando el pedal del freno para que los disco se activen.")
+        print("El auto frena usando el pedal del freno para que los disco se activen.")
 class Motocicleta(Vehiculo):
     def acelerar(self):
-        print("Acelera girando el puño del acelerador.")
+        print("La moto acelera girando el puño del acelerador.")
     def frenar(self):
-        print("Frena presionado el freno activando el disco en la rueda delantera y trasera.")
+        print("La moto frena presionado el freno activando el disco en la rueda delantera y trasera.")
 class Bicicleta(Vehiculo):
     def acelerar(self):
-        print("Acelera pedaleando.")
+        print("La bicicleta acelera pedaleando.")
     def frenar(self):
-        print("Frena presionando las palancas de freno.")
+        print("La bicicleta frena presionando las palancas de freno.")
 automovil = Automovil()
 automovil.acelerar()
 automovil.frenar()
